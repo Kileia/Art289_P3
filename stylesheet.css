@@ -1,0 +1,99 @@
+.tile-1 {
+  grid-area: tile1;
+}
+.tile-2 {
+  grid-area: tile2;
+}
+.tile-3 {
+  grid-area: tile3;
+}
+.tile-4 {
+  grid-area: tile4;
+}
+.tile-5 {
+  grid-area: tile5;
+}
+.tile-6 {
+  grid-area: tile6;
+}
+.tile-7 {
+  grid-area: tile7;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  text-align: center;
+}
+
+body section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  width: 100px;
+  padding: 12px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  text-align: left;
+}
+
+.card h4,
+.card h5,
+.card h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.card p {
+  font-size: 30px;
+  margin: 0;
+}
+
+
+.tile-8 {
+  grid-area: tile8;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+    'tile1 tile3 tile4 tile6 tile8'
+    'tile2 tile3 tile5 tile7 tile7';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: auto;
+    margin: auto;
+}
+
+.navbox {
+  background-color: pink;
+}
+
+
+
+/* .overlay-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .overlay-content{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    background-color: rgb(232, 130, 130);
+    padding:20px;
+  } */
