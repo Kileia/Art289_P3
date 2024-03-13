@@ -19,11 +19,11 @@ async function getWeatherData(type) {
     try {
         const response = await fetch(type);
         const data = await response.json();
-        console.log(data); // Logging the data for verification
+        console.log(data);
         return data;
     } catch (error) {
         console.error('Error loading JSON:', error);
-        throw error; // Rethrow the error so it can be caught by the caller
+        throw error;
     }
 }
 // getWeatherData(weatherCalls.daily)
